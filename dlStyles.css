@@ -1,0 +1,183 @@
+body {
+    margin:0;
+    background-image: url('imgs/123124.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    cursor:default;
+    -webkit-user-select: none;
+    user-select:none;
+}
+* {
+    box-sizing: border-box;
+    -webkit-user-drag:none;
+    margin:0;
+    font-family:open sans;
+    scroll-behavior: smooth;
+}
+
+button {
+    outline:none;
+    border:none;
+    background:#0000;
+    cursor: pointer;
+}
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav-bar {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top:40px;
+    width:90%;
+    margin-left:5%;
+}
+.logo {
+    margin-right:auto
+}
+.logo > img {
+    width:260px;
+    height:70px;
+}
+.nav-links {
+    display:flex;
+    gap:50px;
+    font-size:17px;
+    font-weight: 700;
+}
+.sharps {
+    text-decoration: none;
+    padding:8px 12px;
+    text-shadow:0 0 #ebeaea, 0 2em;
+    overflow:hidden;
+    color:#0000;
+    transition: text-shadow 0.2s ease-in-out;
+    position:relative;
+}
+.sharps::before {
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    border-bottom:2px solid #ebeaea;
+
+    transform:scaleX(0);
+    transform-origin:center;
+
+    transition:transform 0.2s ease-in-out;
+}
+.sharps:is(:hover, :focus)::before {
+    transform:scaleX(0.85);
+}
+.sharps:is(:focus, :hover) {
+    text-shadow: 0 -2em #ebeaea, 0 0 #ebeaea;
+}
+.socials {
+    margin-left:auto;
+    display:flex;
+    flex-direction: row;
+    gap:20px;
+    align-items:center;
+}
+#picker {
+    background:transparent;
+    border:none;
+    cursor:pointer;
+    outline:none;
+    color:#FFF;
+    font-weight:700;
+    transition: .15s ease-in-out;
+}
+#picker:is(:focus, :hover) {
+    box-shadow: 4px 4px #ccc;
+}
+#picker > option {
+    color:#080A0B;
+}
+.devider {
+    width:2px;
+    height: 24px;
+    background:#FFF;
+}
+.tlg > svg, .discord > svg {
+    width:24px;
+    height:24px;
+    vertical-align: middle;
+}
+.content {
+    width:80%;
+    margin-left:10%;
+    padding: 40px;
+    background-color: rgba(211, 211, 211, 0.589);
+    margin-top:60px;
+    border-radius:16px;
+}
+img:not(:first-child) {
+    opacity: 0.8;
+    margin:22px;
+    width:55%;
+}
+.header {
+    font-size:32px;
+    margin-bottom:30px;
+    font-weight:700;
+}
+.main-guide {
+    margin-bottom:40px;
+}
+li {
+    font-size:18px;
+    font-weight: 600;
+}
+li:not(:last-child) {
+    margin-bottom:6px;
+}
+u {
+    text-decoration: 2px underline solid lightblue;
+}
+.launcher {
+    text-decoration: 4px underline solid red;
+}
+a:hover {
+    text-decoration: none;
+}
+@media screen and (max-width:1300px) {
+    img {
+        width:75%;
+    }
+}
+@media screen and (max-width:1000px) {
+    .header {
+        font-size:18px;
+    }
+    li {
+        font-size:14px;
+    }
+    img {
+        width:90%;
+    }
+}
+@media screen and (max-width:700px) {
+    .content {
+        width:95%;
+        margin-left: 2.5%;
+        padding:20px 10px;
+    }
+    a.logo {
+        display:none;
+    }
+}
+@media screen and (max-width:550px) {
+    img {
+        width: 100%;
+        margin:0;
+        margin-top:15px;
+    }
+}
