@@ -118,6 +118,7 @@ button {
     background-color: rgba(211, 211, 211, 0.589);
     margin-top:60px;
     border-radius:16px;
+    margin-bottom: 40px;
 }
 img:not(:first-child) {
     opacity: 0.8;
