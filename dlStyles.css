@@ -148,6 +148,9 @@ u {
 a:hover {
     text-decoration: none;
 }
+.path {
+    background:rgb(212, 212, 212);
+}
 @media screen and (max-width:1300px) {
     img {
         width:75%;
