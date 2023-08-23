@@ -126,7 +126,7 @@ button {
     align-items: center;
     gap:50px;
     background: rgba(0, 0, 0, 0.363);
-    padding:40px 0px;
+    padding:40px 20px;
     border-radius:14px;
 }
 .welc-header {
@@ -153,6 +153,7 @@ button {
     font-family: open sans;
     font-size: 24px;
     color:rgb(201, 201, 201);
+    text-align: center;
 }
 .down-page {
     text-decoration:none;
@@ -337,4 +338,165 @@ button {
 }
 .run-link:is(:focus, :hover) {
     background-position: 100% 0;
+}
+.path {
+    margin-bottom: 40px;
+}
+.scroll.res {
+    display:none;
+}
+@media screen and (max-width: 1100px) {
+    .welc-box {
+        width:80%;
+    }
+    .about {
+        display: none;
+    }
+    .black:not(.black.cir){
+        display:none;
+    }
+    .sharps:nth-child(2) {
+        display:none;
+    }
+    .scroll {
+        display:none;
+    }
+    .scroll.res {
+        display:block;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .logo > img {
+        width:160px;
+        height:43px;
+    }
+    .nav-links {
+        font-size:14px;
+    }
+    .socials {
+        gap:14px;
+    }
+    #picker {
+        font-size:12px;
+    }
+    .welc-header {
+        font-size: 50px;
+    }
+    .welc-description {
+        font-size:20px;
+    }
+    .down-page {
+        padding:12px 18px;
+        font-size:16px;
+    }
+    .welc-box {
+        width:80%;
+    }
+    .cir-sub {
+        font-size:24px;
+    }
+    .cir-head {
+        font-size:90px;
+    }
+    .tbl-header {
+        font-size:20px;
+    }
+    .tbl-description {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 750px) {
+    .logo {
+        display:none
+    }
+    .nav-bar {
+        white-space: nowrap;
+        overflow-x: auto;
+        gap:14px;
+        justify-content: normal;
+    }
+    .nav-links {
+        gap:30px;
+    }
+    .welc-header {
+        font-size: 40px;
+    }
+    .welc-description {
+        font-size:14px;
+    }
+    .down-page {
+        padding:10px 16px;
+        font-size:14px;
+    }
+    .welc-box {
+        width:80%;
+        gap:40px;
+    }
+    .cir-sub {
+        font-size:16px;
+        margin:10px;
+        text-align: center;
+    }
+    .cir-head {
+        font-size:54px;
+        margin:10px;
+        text-align: center;
+    }
+    .tbl-header {
+        font-size:20px;
+    }
+    .tbl-description {
+        font-size: 14px;
+    }
+    .scroll > svg {
+        margin-top:10px;
+    }
+    .table {
+        width:70%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .welc-box {
+        width:94%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .table {
+        width:86%;
+    }
+    .cir-head {
+        font-size:36px;
+    }
+    .tbl-header {
+        font-size:16px;
+    }
+    .tbl-description {
+        font-size:14px;
+    }
+    .table {
+        margin-top: 20px;
+    }
+    .cir-head, .cir-sub {
+        
+    }
+    .rows {
+        flex-direction: column;
+        border:none;
+    }
+    .rows > .td:first-child:not(.rows:last-child > .td) {
+        border-right:none;
+    }
+    .rows > .td:not(.rows:last-child > .td) {
+        width:100%;
+        border-bottom: 1px solid #979797;
+    }
+}
+@media screen and (max-width: 430px) {
+    .welc-header {
+        font-size:32px;
+    }
+    .welc-description {
+        font-size: 14px;
+    }
 }

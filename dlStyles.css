@@ -5,13 +5,9 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    cursor:default;
-    -webkit-user-select: none;
-    user-select:none;
 }
 * {
     box-sizing: border-box;
-    -webkit-user-drag:none;
     margin:0;
     font-family:open sans;
     scroll-behavior: smooth;
@@ -117,10 +113,10 @@ button {
     padding: 40px;
     background-color: rgba(211, 211, 211, 0.589);
     margin-top:60px;
+    margin-bottom:40px;
     border-radius:16px;
-    margin-bottom: 40px;
 }
-img:not(:first-child) {
+.pic-link {
     opacity: 0.8;
     margin:22px;
     width:55%;
@@ -164,7 +160,7 @@ a:hover {
     li {
         font-size:14px;
     }
-    img {
+    .pic-link {
         width:90%;
     }
 }
@@ -179,7 +175,7 @@ a:hover {
     }
 }
 @media screen and (max-width:550px) {
-    img {
+    .pic-link {
         width: 100%;
         margin:0;
         margin-top:15px;
