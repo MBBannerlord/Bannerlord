@@ -345,6 +345,11 @@ button {
 .scroll.res {
     display:none;
 }
+@media screen and (max-width: 1300px) {
+    .welc-box {
+        width:70%;
+    }
+}
 @media screen and (max-width: 1100px) {
     .welc-box {
         width:80%;
